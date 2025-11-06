@@ -106,7 +106,7 @@ Informative content does not contain these key words.
         <span style="width:22pt;text-indent:0pt;display:inline-block"> </span>
         <span>The attribute is required, but does not have to be displayed</span>
       </p>
-      <p>Table E.2-1 provides an example table defining matching and return keys. Short notes on usage can be put in the Notes column of the table. Longer notes should be numbered, put under the table, and referenced from the Notes column.</p>
+      <p>Table E.2-1 provides an example table defining matching and return keys. Note that sequence attributes are used as a structuring header in these matching and return key tables, and requirements are given for individual sequence items.  Short notes on usage can be put in the Notes column of the table. Longer notes should be numbered, put under the table, and referenced from the Notes column.</p>
       <p id="tE.2-1" class="tableTitle">Table E.2-1: Images Query Matching and Return Keys</p>
       <table cellspacing="0" cellpadding="0">
       <thead>
@@ -132,19 +132,19 @@ Informative content does not contain these key words.
         <tr>
           <td>Scheduled Human Performers Sequence</td>
           <td>(0040,4034)</td>
-          <td>R+</td>
-          <td>R</td>
-          <td>R+*</td>
-          <td>R</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
           <td />
         </tr>
         <tr>
           <td>&gt;Human Performer Code Sequence</td>
           <td>(0040,4009)</td>
-          <td>R+</td>
-          <td>R</td>
-          <td>R+*</td>
-          <td>R</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
           <td />
         </tr>
         <tr>
@@ -193,42 +193,33 @@ Informative content does not contain these key words.
           <td />
         </tr>
         <tr>
-          <td>Referenced Study Component Sequence</td>
-          <td>(0008,1111)</td>
-          <td>O</td>
-          <td>O</td>
-          <td>O</td>
-          <td>O</td>
-          <td />
-        </tr>
-        <tr>
-          <td>&gt;Referenced SOP Class UID</td>
-          <td>(0008,1150)</td>
-          <td>O</td>
-          <td>O</td>
-          <td>O</td>
-          <td>R</td>
-          <td />
-        </tr>
-        <tr>
-          <td>&gt;Referenced SOP Instance UID</td>
-          <td>(0008,1155)</td>
-          <td>O</td>
-          <td>O</td>
-          <td>O</td>
-          <td>R</td>
-          <td />
-        </tr>
-        <tr>
           <td>Input Information Sequence</td>
           <td>(0040,4021)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td />
+        </tr>
+        <tr>
+          <td>&gt;Study Instance UID</td>
+          <td>(0020,000D)</td>
           <td>O</td>
           <td>O</td>
           <td>R+*</td>
           <td>R</td>
           <td />
         </tr>
-       </tbody>
+        <tr>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td />
+        </tr>
+	  </tbody>
       </table>
       <p class="note">Note: This is a sample note for the purpose of illustration.</p>
       <h2 id="E.3">E.3 Profiling HL7</h2>
